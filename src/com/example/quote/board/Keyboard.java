@@ -21,12 +21,15 @@ import android.widget.ImageButton;
 		ActionBar action= getActionBar();
         action.hide();
         
+        //Media Player Repeats
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.terminal_main_hacked);
         
-        
-     Button a = (Button)this.findViewById(R.id.a);
+     //Buttons   
+     Button lowC = (Button)this.findViewById(R.id.lowC);
      
-     a.setOnClickListener(new OnClickListener() {
+     
+     //Defining Button Actions
+     lowC.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
