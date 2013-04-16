@@ -4,4 +4,24 @@
     android:layout_height="match_parent"
     android:theme="@style/AppTheme" >
 
+    <Button
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="22dp"
+        android:background="@drawable/button_left"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/asharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/a"
+        android:layout_toRightOf="@+id/a"
+        android:background="@drawable/button_top"
+        android:gravity="center" />
+
 </RelativeLayout>
