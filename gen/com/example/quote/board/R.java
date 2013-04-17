@@ -35,7 +35,8 @@ public final class R {
         public static final int main_menu=0x7f070000;
     }
     public static final class raw {
-        public static final int terminal_main_hacked=0x7f040000;
+        public static final int hello=0x7f040000;
+        public static final int terminal_main_hacked=0x7f040001;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
