@@ -11,7 +11,6 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 		
 public class Keyboard extends Activity{
@@ -30,8 +29,8 @@ public class Keyboard extends Activity{
 	 // TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.keyboard);
-		//ActionBar action= getActionBar();
-        //action.hide();
+		ActionBar action= getActionBar();
+        action.hide();
         
         //SoundPool variable repeats
         final SoundPool lowCs = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
