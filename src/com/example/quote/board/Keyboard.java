@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 		
 public class Keyboard extends Activity{
  @SuppressLint({ "NewApi", "NewApi", "NewApi" })
@@ -47,8 +48,8 @@ public class Keyboard extends Activity{
        
         
      //Buttons   
-     Button lowC = (Button)this.findViewById(R.id.lowC);
-     Button lowCsharp = (Button)this.findViewById(R.id.lowCsharp);
+     ImageButton lowC = (ImageButton)this.findViewById(R.id.lowC);
+     ImageButton lowCsharp = (ImageButton)this.findViewById(R.id.lowCsharp);
      
 		
 
