@@ -6,17 +6,14 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
-
-		public class Keyboard extends Activity{
+		
+public class Keyboard extends Activity{
  @SuppressLint({ "NewApi", "NewApi", "NewApi" })
  
  SoundPool soundPool;
@@ -26,7 +23,7 @@ import android.widget.ImageButton;
  
  
  
-@SuppressLint({ "NewApi", "NewApi", "NewApi" })
+@SuppressLint({ "NewApi", "NewApi", "NewApi", "UseSparseArrays" })
 @Override
  		protected void onCreate(Bundle savedInstanceState) {
 	 // TODO Auto-generated method stub
@@ -53,9 +50,11 @@ import android.widget.ImageButton;
      Button lowC = (Button)this.findViewById(R.id.lowC);
      Button lowCsharp = (Button)this.findViewById(R.id.lowCsharp);
      
-     //Defining Button Actions
-     lowC.setOnClickListener(new OnClickListener() {
-			
+		
+
+		//Defining Button Actions
+		lowC.setOnClickListener(new OnClickListener() {
+
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
@@ -90,4 +89,10 @@ import android.widget.ImageButton;
 		
   });
  }
-		}
+		
+
+
+
+		
+	}
+
