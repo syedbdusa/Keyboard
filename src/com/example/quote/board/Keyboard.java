@@ -57,7 +57,7 @@ public class Keyboard extends Activity{
 
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+			AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 	              float curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
 	              float maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
 	              float leftVolume = curVolume/maxVolume;
@@ -96,3 +96,17 @@ public class Keyboard extends Activity{
 		
 	}
 
+public class Key{
+	
+	String name;
+	SoundPool soundPool;
+ 	HashMap<Integer, Integer> soundPoolMap = new HashMap<Integer, Integer>();
+ 	static int soundID = 1;
+	final SoundPool pool = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
+	Context context;
+	
+	
+	public Key(){
+		
+	}
+}
