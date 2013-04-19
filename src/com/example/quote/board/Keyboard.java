@@ -33,16 +33,16 @@ public class Keyboard extends Activity{
 		action.hide();
 
 		//SoundPool variable repeats
-		final SoundPool lowCs = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
-		final SoundPool lowCsharpS= new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
+		final SoundPool lowCS = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
+		final SoundPool lowCSharpS = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
 
 
-		soundPoolMap= new HashMap<Integer, Integer>();
+		soundPoolMap = new HashMap<Integer, Integer>();
 
 
 		//Sound map repeats
-		soundPoolMap.put(soundID, lowCs.load(this, R.raw.terminal_main_hacked, 1));
-		soundPoolMap.put(soundID, lowCsharpS.load(this, R.raw.hello, 1));
+		soundPoolMap.put(soundID, lowCS.load(this, R.raw.terminal_main_hacked, 1));
+		soundPoolMap.put(soundID, lowCSharpS.load(this, R.raw.hello, 1));
 
 
 
@@ -64,7 +64,7 @@ public class Keyboard extends Activity{
 				int priority = 1;
 				int no_loop = 0;
 				float normal_playback_rate = 1f;
-				lowCs.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
+				lowCS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
 			}
 
 
@@ -81,7 +81,7 @@ public class Keyboard extends Activity{
 				int priority = 1;
 				int no_loop = 0;
 				float normal_playback_rate = 1f;
-				lowCsharpS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
+				lowCSharpS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
 			}
 
 

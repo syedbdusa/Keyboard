@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 @SuppressLint("UseSparseArrays")
 public class Key extends Activity{
 
-	String name;
 	SoundPool soundPool;
 	HashMap<Integer, Integer> soundPoolMap = new HashMap<Integer, Integer>();
 	static int soundID = 1;
@@ -34,17 +33,22 @@ public class Key extends Activity{
 	float leftVolume = curVolume/maxVolume;
 	float rightVolume = curVolume/maxVolume;
 	int priority = 1;
-	int no_loop = 0;
-	float normal_playback_rate = 1f;
+	int loop = 0;
+	float rate = 1f;
 
 
 
 	public Key(String name, int id, int resID, Context currentClass){
-		this.name = name;
 		this.resID = resID;
 		this.id = id;
 		this.currentClass = currentClass;
 
-		button = (ImageButton)this.findViewById(id);
+		button = (ImageButton)((Activity) currentClass).findViewById(id);
+		
+		soundPoolMap.put(soundID, pool.load(currentClass, resID, 1));
+	}
+	
+	public void playKey(){
+		pool.play(soundID, leftVolume, rightVolume, priority, loop, rate);
 	}
 }
