@@ -22,14 +22,14 @@ public class Keyboard extends Activity{
  
  
  
- 
+//Matthew Van Horn 
 @SuppressLint({ "NewApi", "NewApi", "NewApi", "UseSparseArrays" })
 @Override
  		protected void onCreate(Bundle savedInstanceState) {
 	 // TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.keyboard);
-		ActionBar action= getActionBar();
+		ActionBar action = getActionBar();
         action.hide();
         
         //SoundPool variable repeats
@@ -103,10 +103,31 @@ public class Key{
  	HashMap<Integer, Integer> soundPoolMap = new HashMap<Integer, Integer>();
  	static int soundID = 1;
 	final SoundPool pool = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
-	Context context;
+	int id;
+	//SoundFile
+	int resID;
+	
+	ButtonImage button;
+	Context currentClass;
+	
+	//Random Values
+	AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+	float curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+	float maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        float leftVolume = curVolume/maxVolume;
+        float rightVolume = curVolume/maxVolume;
+	int priority = 1;
+	int no_loop = 0;
+	float normal_playback_rate = 1f;
 	
 	
-	public Key(){
+	
+	public Key(String name, int id, int resID, Context currentClass){
+		this.name = name;
+		this.resId = resID
+		this.id = id;
+		this.currentClass = currentClass;
 		
+		button = (ImageButton)this.findViewById(id);
 	}
 }
