@@ -12,27 +12,37 @@ public final class R {
     }
     public static final class drawable {
         public static final int button_left=0x7f020000;
-        public static final int button_top=0x7f020001;
-        public static final int ic_action_search=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int key_left=0x7f020004;
-        public static final int key_top=0x7f020005;
+        public static final int button_middle=0x7f020001;
+        public static final int button_right=0x7f020002;
+        public static final int button_top=0x7f020003;
+        public static final int ic_action_search=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int key_left=0x7f020006;
+        public static final int key_middle=0x7f020007;
+        public static final int key_right=0x7f020008;
+        public static final int key_top=0x7f020009;
     }
     public static final class id {
-        public static final int info=0x7f080005;
-        public static final int linearLayout1=0x7f080002;
-        public static final int lowC=0x7f080001;
-        public static final int lowCsharp=0x7f080000;
-        public static final int menu_settings=0x7f080006;
-        public static final int specialKeyboards=0x7f080004;
-        public static final int startPlaying=0x7f080003;
+        public static final int C=0x7f080000;
+        public static final int Csharp=0x7f080001;
+        public static final int D=0x7f080002;
+        public static final int Dsharp=0x7f080003;
+        public static final int E=0x7f080004;
+        public static final int F=0x7f080005;
+        public static final int info=0x7f080009;
+        public static final int linearLayout1=0x7f080006;
+        public static final int menu_settings=0x7f08000a;
+        public static final int specialKeyboards=0x7f080008;
+        public static final int startPlaying=0x7f080007;
     }
     public static final class layout {
-        public static final int keyboard=0x7f030000;
-        public static final int main_menu=0x7f030001;
+        public static final int info=0x7f030000;
+        public static final int keyboard=0x7f030001;
+        public static final int main_menu=0x7f030002;
     }
     public static final class menu {
-        public static final int main_menu=0x7f070000;
+        public static final int info=0x7f070000;
+        public static final int main_menu=0x7f070001;
     }
     public static final class raw {
         public static final int hello=0x7f040000;
@@ -42,6 +52,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int menu_settings=0x7f050002;
+        public static final int title_activity_info=0x7f050004;
         public static final int title_activity_main_menu=0x7f050003;
     }
     public static final class style {

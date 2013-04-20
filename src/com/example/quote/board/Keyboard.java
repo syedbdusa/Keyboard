@@ -33,27 +33,27 @@ public class Keyboard extends Activity{
 		action.hide();
 
 		//SoundPool variable repeats
-		final SoundPool lowCS = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
-		final SoundPool lowCSharpS = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
+		final SoundPool CS = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
+		final SoundPool CSharpS = new SoundPool(4, AudioManager.STREAM_MUSIC, 100);
 
 
 		soundPoolMap = new HashMap<Integer, Integer>();
 
 
 		//Sound map repeats
-		soundPoolMap.put(soundID, lowCS.load(this, R.raw.terminal_main_hacked, 1));
-		soundPoolMap.put(soundID, lowCSharpS.load(this, R.raw.hello, 1));
+		soundPoolMap.put(soundID, CS.load(this, R.raw.terminal_main_hacked, 1));
+		soundPoolMap.put(soundID, CSharpS.load(this, R.raw.hello, 1));
 
 
 
 		//Buttons   
-		ImageButton lowC = (ImageButton)this.findViewById(R.id.lowC);
-		ImageButton lowCsharp = (ImageButton)this.findViewById(R.id.lowCsharp);
+		ImageButton C = (ImageButton)this.findViewById(R.id.C);
+		ImageButton Csharp = (ImageButton)this.findViewById(R.id.Csharp);
 
 
 
 		//Defining Button Actions
-		lowC.setOnClickListener(new OnClickListener() {
+		C.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
 				AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
@@ -64,13 +64,13 @@ public class Keyboard extends Activity{
 				int priority = 1;
 				int no_loop = 0;
 				float normal_playback_rate = 1f;
-				lowCS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
+				CS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
 			}
 
 
 		});
 
-		lowCsharp.setOnClickListener(new OnClickListener() {
+		Csharp.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
 				AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
@@ -81,7 +81,7 @@ public class Keyboard extends Activity{
 				int priority = 1;
 				int no_loop = 0;
 				float normal_playback_rate = 1f;
-				lowCSharpS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
+				CSharpS.play(soundID, leftVolume, rightVolume, priority, no_loop, normal_playback_rate);
 			}
 
 
