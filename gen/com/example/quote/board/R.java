@@ -18,22 +18,22 @@ public final class R {
         public static final int ic_action_search=0x7f020004;
         public static final int ic_launcher=0x7f020005;
         public static final int key_left=0x7f020006;
-        public static final int key_middle=0x7f020007;
-        public static final int key_right=0x7f020008;
-        public static final int key_top=0x7f020009;
+        public static final int key_left_dim=0x7f020007;
+        public static final int key_middle=0x7f020008;
+        public static final int key_middle_dim=0x7f020009;
+        public static final int key_right=0x7f02000a;
+        public static final int key_right_dim=0x7f02000b;
+        public static final int key_top=0x7f02000c;
+        public static final int key_top_dim=0x7f02000d;
     }
     public static final class id {
         public static final int C=0x7f080000;
         public static final int Csharp=0x7f080001;
-        public static final int D=0x7f080002;
-        public static final int Dsharp=0x7f080003;
-        public static final int E=0x7f080004;
-        public static final int F=0x7f080005;
-        public static final int info=0x7f080009;
-        public static final int linearLayout1=0x7f080006;
-        public static final int menu_settings=0x7f08000a;
-        public static final int specialKeyboards=0x7f080008;
-        public static final int startPlaying=0x7f080007;
+        public static final int info=0x7f080005;
+        public static final int linearLayout1=0x7f080002;
+        public static final int menu_settings=0x7f080006;
+        public static final int specialKeyboards=0x7f080004;
+        public static final int startPlaying=0x7f080003;
     }
     public static final class layout {
         public static final int info=0x7f030000;

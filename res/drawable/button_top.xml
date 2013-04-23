@@ -2,13 +2,9 @@
  
  <selector
  	xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:state_enabled="false" 
-     android:drawable="@drawable/key_top" />
     <item android:state_enabled="true" 
      android:state_pressed="true" android:drawable="@drawable/key_top" />
     <item android:state_enabled="true"
-     android:state_focused="true" android:drawable="@drawable/key_top" />
-    <item android:state_enabled="true"
-     android:drawable="@drawable/key_top" />
+     android:drawable="@drawable/key_top_dim" />
 </selector>	
 

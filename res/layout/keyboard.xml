@@ -4,75 +4,23 @@
     android:layout_height="match_parent"
     android:theme="@style/AppTheme" >
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="fitXY" />
-    
     <ImageButton
         android:id="@+id/C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/key_left" />
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_left" />
 
     <ImageButton
         android:id="@+id/Csharp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/button_top"
-        android:gravity="center" />
-    
-    <ImageButton
-        android:id="@+id/D"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/key_middle"
-        />
-    
-    <ImageButton
-        android:id="@+id/Dsharp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/key_top"
-        />
-    
-    <ImageButton
-        android:id="@+id/E"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="61dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/key_right"
-        />
-    
-    <ImageButton
-        android:id="@+id/F"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="false"
-        android:layout_marginLeft="83dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/key_left"
-        />
-
-    
+        android:layout_alignBottom="@+id/C"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="87dp"
+        android:layout_toRightOf="@+id/C"
+        android:background="@drawable/button_top" />
 
 </RelativeLayout>
