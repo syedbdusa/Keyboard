@@ -19,11 +19,7 @@ public class Keyboard extends Activity{
 	SoundPool soundPool;
 	HashMap<Integer, Integer> soundPoolMap;
 	int soundID = 1;
-
-	//JAIIOJDIJWijd
-	//HAWUSHDUHWA
-	//ASDMDAMWLALSDLASD
-
+	
 	//Matthew Van Horn 
 	@SuppressLint({ "NewApi", "NewApi", "NewApi", "UseSparseArrays" })
 	@Override
