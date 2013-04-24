@@ -55,34 +55,34 @@ public class Keyboard extends Activity{
 
 
 		//Sound map repeats
-		soundPoolMap.put(soundID, CS.load(this, R.raw.terminal_main_hacked, 1));
-		soundPoolMap.put(soundID, CSharpS.load(this, R.raw.hello, 1));
-		soundPoolMap.put(soundID, DS.load(this, R.raw./*sound*/, 1));
-		soundPoolMap.put(soundID, DSharpS.load(this, R.raw./*sound*/, 1));
-		soundPoolMap.put(soundID, ES.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, FS.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, FSharpS.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, GS.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, GSharpS.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, AS.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, ASharpS.load(this, R.raw/*sound*/, 1));
-		soundPoolMap.put(soundID, BSound.load(this, R.raw/*sound*/, 1));
+		soundPoolMap.put(soundID, CS.load(this, R.raw.c, 1));
+		soundPoolMap.put(soundID, CSharpS.load(this, R.raw.csharp, 1));
+		soundPoolMap.put(soundID, DS.load(this, R.raw.d, 1));
+		soundPoolMap.put(soundID, DSharpS.load(this, R.raw.dsharp, 1));
+		soundPoolMap.put(soundID, ES.load(this, R.raw.e, 1));
+		soundPoolMap.put(soundID, FS.load(this, R.raw.f, 1));
+		soundPoolMap.put(soundID, FSharpS.load(this, R.raw.fsharp, 1));
+		soundPoolMap.put(soundID, GS.load(this, R.raw.g, 1));
+		soundPoolMap.put(soundID, GSharpS.load(this, R.raw.gsharp, 1));
+		soundPoolMap.put(soundID, AS.load(this, R.raw.a, 1));
+		soundPoolMap.put(soundID, ASharpS.load(this, R.raw.asharp, 1));
+		soundPoolMap.put(soundID, BSound.load(this, R.raw.b, 1));
 
 
 
 		//Buttons   
 		ImageButton C = (ImageButton)this.findViewById(R.id.C);
 		ImageButton Csharp = (ImageButton)this.findViewById(R.id.Csharp);
-		ImageButton D = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton Dsharp = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton E = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton F = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton Fsharp = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton G = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton Gsharp = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton A = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton Asharp = (ImageButton)this.findViewById(R.id./*URI*/);
-		ImageButton B = (ImageButton)this.findViewById(R.id./*URI*/);
+		ImageButton D = (ImageButton)this.findViewById(R.id.D);
+		ImageButton Dsharp = (ImageButton)this.findViewById(R.id.Dsharp);
+		ImageButton E = (ImageButton)this.findViewById(R.id.E);
+		ImageButton F = (ImageButton)this.findViewById(R.id.F);
+		ImageButton Fsharp = (ImageButton)this.findViewById(R.id.Fsharp);
+		ImageButton G = (ImageButton)this.findViewById(R.id.G);
+		ImageButton Gsharp = (ImageButton)this.findViewById(R.id.Gsharp);
+		ImageButton A = (ImageButton)this.findViewById(R.id.A);
+		ImageButton Asharp = (ImageButton)this.findViewById(R.id.Asharp);
+		ImageButton B = (ImageButton)this.findViewById(R.id.B);
 
 
 
